@@ -23,10 +23,14 @@ while True:
 
     elif guess < number:
         print("Too low!!")
-    
-    else:
-        print("Right guess!")
-        print(f"You won in {attempts} attempts :)")
+
+    # adding lose win condition
+    if guess == number or attempts == 7:
+        if guess == number:
+            print("Right guess!")
+            print(f"You won in {attempts} attempts :)")
+        else:
+            print(f"Attempts limit exceeded. You lost. Right number was {number}.")
 
         # to play again
         while True:
