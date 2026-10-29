@@ -16,14 +16,14 @@ while True:
         print("Please guess in correct range!!!")
         continue
 
-    attempts += 1
+    attempts += 1 # for every valid input attempts will increase
 
     if guess > number:
         print("Too High!!!")
-        attempts += 1
+
     elif guess < number:
         print("Too low!!")
-        attempts += 1
+    
     else:
         print("Right guess!")
         print(f"You won in {attempts} attempts :)")
